@@ -1,45 +1,49 @@
-<?php include "functions.php" ?>
-<?php include "includes/header.php" ?>
+<?php include "functions.php"; ?>
+<?php include "includes/header.php"; ?>
 
-	<section class="content">
+    <section class="content">
 
-		<aside class="col-xs-4">
+    <aside class="col-xs-4">
 
-	<?php Navigation();?>
-			
-			
-		</aside><!--SIDEBAR-->
+        <?php Navigation(); ?>
 
 
-		<article class="main-content col-xs-8">
-			<h2>Practice Section 1</h2>
+    </aside><!--SIDEBAR-->
 
 
-		<?php  
+    <article class="main-content col-xs-8">
 
 
-		/* Step 1: Make 2 variables called number1 and number2 and set 1 to value 10 and the other 20:
-
-		  Step 2: Add the two variables and display the sum with echo:
+        <?php
 
 
+        /*Step 1: Make 2 variables called number1 and number2 and set 1 to value 10 and the other 20:*/
 
-		  Step2: Make 2 Arrays with the same values, one regular and the other associative
+        $number1 = 10;
+        $number2 = 20;
 
-		  Step4: Make a constant and set it to the value of PHP.
+        /*Step 2: Add the two variables and display the sum with echo:*/
 
+        $result = $number1 + $number2;
 
-			
-
-			 */
-
-		
+        echo "<p>The sum of " . $number1 . " and " . $number2 . " is " . $result . "</p>";
 
 
-		?>
+        /*Step3: Make 2 Arrays with the same values, one regular and the other associative*/
 
-	
+        $myRegularArray = [10, 20];
 
-		</article><!--MAIN CONTENT-->
+        echo "<p>this is a regular array:</p>";
+        print_r($myRegularArray);
 
-<?php include "includes/footer.php" ?>
+        $myAssocArray = ['num1' => 10, 'num2' => 20];
+
+        echo "<p>This is an associative array yeah: </p>";
+        print_r($myAssocArray);
+
+        ?>
+
+
+    </article><!--MAIN CONTENT-->
+
+<?php include "includes/footer.php"; ?>
