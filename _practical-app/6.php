@@ -14,7 +14,7 @@
 
 
         <?php
-
+        // testering
         /*Step1: Make a form that submits one value to POST super global*/
             if (isset($_POST['submit'])){
                 echo "<h1>Thanks " . $_POST['FirstName'] . " we will be in touch soon!</h1>";
